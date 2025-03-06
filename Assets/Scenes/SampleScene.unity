@@ -670,7 +670,7 @@ MonoBehaviour:
   liftBooster: 0.5
   drag: 0.001
   angularDrag: 0.001
-  yawPower: 50
+  yawPower: 30
   pitchPower: 50
   rollPower: 30
 --- !u!54 &1438740811
