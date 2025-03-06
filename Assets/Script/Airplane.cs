@@ -16,6 +16,12 @@ public class Airplane : MonoBehaviour
     
     void FixedUpdate()
     {
-        
+        if(Input.GetKey(KeyCode.Space))
+        {
+            rb.AddForce(transform.forward * enginePower);
+
+        }
+        Vector3 lift = Vector3.Project(rb.linearVelocity, transform.forward);
+        rb.AddForce(transform.up * lift.magnitude * liftBooster);
     }
 }
